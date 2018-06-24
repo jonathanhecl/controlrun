@@ -4,7 +4,7 @@
 //
 // * Step 3: Choice "Realtime Database"
 //
-// * Step 4: Go to rules an paste:
+// * Step 4: Go to rules and paste:
 //
 /*
 	{
