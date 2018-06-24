@@ -12,7 +12,7 @@ _Control the access of your apps with Firebase_
     ".write": false,
     "$project": {
     	".read": false,
-	"$token": {
+	   "$token": {
             ".read": "data.val() == 1"
       	}
     }
