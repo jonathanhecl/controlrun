@@ -37,11 +37,11 @@
 */
 // * Step 7: Setup it:
 /*
-	Set("[ProjectName]", "[appName]/[tokenCode]")
+	controlrun.Set("[ProjectName]", "[appName]/[tokenCode]")
 */
 // * Step 8: Use it:
 /*
-	access, _ := Run()
+	access, _ := controlrun.Run()
 	if !access {
 		panic("Permission denied")
 	}
