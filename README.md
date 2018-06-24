@@ -6,26 +6,26 @@ _Control the access of your apps with Firebase_
  2. Go to Database options and choice to create a "Realtime Database".
  3. Go to rules and paste:
  ```
-    {
-      "rules": {
-    	  ".read": false,
-        ".write": false,
-    		"$project": {
-          ".read": false,
-    			"$token": {
-            ".read": "data.val() == 1"
-          }
-        }
+{
+  "rules": {
+	  ".read": false,
+    ".write": false,
+		"$project": {
+      ".read": false,
+			"$token": {
+        ".read": "data.val() == 1"
       }
     }
+  }
+}
 ```
  4. Go to Data and import or create an struct like this code:
 ```
-    {
-    	"appName" : {
-    		"tokenCode" : 0
-    	}
-    }
+{
+ "appName" : {
+  "tokenCode" : 0
+ }
+}
 ```
 ## Start using it
  1.  Download and install it:
