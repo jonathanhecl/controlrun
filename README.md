@@ -27,6 +27,8 @@ _Control the access of your apps with Firebase_
  }
 }
 ```
+ 5. If you want to activate an tokenCode, only need put 1 in the value.
+
 ## Start using it
  1.  Download and install it:
  ```
