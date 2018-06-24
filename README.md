@@ -8,13 +8,13 @@ _Control the access of your apps with Firebase_
  ```
 {
   "rules": {
-	  ".read": false,
+    ".read": false,
     ".write": false,
-		"$project": {
-      ".read": false,
-			"$token": {
-        ".read": "data.val() == 1"
-      }
+    "$project": {
+    	".read": false,
+	"$token": {
+            ".read": "data.val() == 1"
+      	}
     }
   }
 }
