@@ -38,11 +38,11 @@ _Control the access of your apps with Firebase_
  ``` 
  3. Setup your Firebase:
  ```
-    Set("[ProjectName]", "[appName]/[tokenCode]")
+    controlrun.Set("[ProjectName]", "[appName]/[tokenCode]")
  ``` 
  4. Control the access:
  ```
-    access, _ := Run()
+    access, _ := controlrun.Run()
     if !access {
     	panic("Permission denied")
     }
