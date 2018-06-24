@@ -27,6 +27,7 @@ _Control the access of your apps with Firebase_
  }
 }
 ```
+The tokenCode can be what you want, like the client name.
  5. If you want to activate an tokenCode, only need put 1 in the value.
 
 ## Start using it
