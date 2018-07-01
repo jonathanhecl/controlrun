@@ -6,12 +6,13 @@ import (
 
 // Test Access
 func TestAccess(t *testing.T) {
-	Set("project-name", "appName/a9zaSyB7sRpNWuVbNb")
+	hash := Set("project-name", "appName/da39a3ee5e6b4b0d3255bfef95601890afd80709")
+	println("Hash verification generated:", hash)
 
-	access, err := Run()
+	err := Run(hash)
 	if err != nil {
 		t.Fatal(err)
 	} else {
-		t.Log(access)
+		t.Log("OK")
 	}
 }
