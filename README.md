@@ -46,8 +46,22 @@ The tokenCode can be what you want, like the client name.
  ``` 
  4. Control the access:
  ```
-    access, _ := controlrun.Run()
-    if !access {
+    err := controlrun.Run()
+    if err != nil {
+    	panic("Permission denied")
+    }
+ ```
+
+## How use hash verification
+ 1.  Run in a local file or an any test:
+```
+    hash := controlrun.Set("[ProjectName]", "[appName]/[tokenCode]")
+    println(hash)
+ ``` 
+2.   Copy your hash generated, and use it in the Run() function:
+ ```
+    err := controlrun.Run("da39a3ee5e6b4b0d3255bfef95601890afd80709")
+    if err != nil {
     	panic("Permission denied")
     }
  ```
