@@ -31,6 +31,8 @@ The tokenCode can be what you want, like the client name.
 
  5. If you want to activate an tokenCode, only need put 1 in the value.
 
+You can combine it with my other project [autosign](https://github.com/jonathanhecl/autosign) to create the unique tokenCode and protect you app from crackers.
+
 ## Start using it
  1.  Download and install it:
  ```
