@@ -67,3 +67,8 @@ You can combine it with my other project [autosign](https://github.com/jonathanh
     	panic("Permission denied")
     }
  ```
+
+## Screenshots
+
+### Firebase struct
+![Firebase struct](https://i.imgur.com/cvBF3vL.png)
